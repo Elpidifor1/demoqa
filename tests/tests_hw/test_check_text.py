@@ -14,3 +14,11 @@ def test_check_text_centre(browser):
     demo_qa_page.btn.click()
     time.sleep(3)
     assert elements_page.centre.get_text() == elements_page.centre_text
+
+def test_page_elements(browser):
+    elements_page = ElementsPage(browser)
+    elements_page.visit()
+    assert elements_page.icon.exist()
+    assert elements_page.btn_sidebar_first.exist()
+    assert elements_page.btn_sidebar_first_textbox.exist()
+
