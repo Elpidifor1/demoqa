@@ -14,6 +14,8 @@ class ElementsPage (BasePage):
         self.btn_sidebar_first = WebElement(driver, ".col-12.mt-4.col-md-3.col-xl-2 > div > div > div:nth-child(1) > span > div > div.header-text")
         self.btn_sidebar_first_textbox = WebElement(driver, "#item-0 > a > span")
         self.btn_sidebar_first_checkbox = WebElement(driver, "#item-1 > a > span")
+        self.btns_first_menu = WebElement(driver, "div:nth-child(1) > div > ul > li")
+        # item-0
 
 
 

@@ -7,14 +7,14 @@ from components.components import WebElement
 
 #создаем класс конкретной страницы
 class DemoQa(BasePage):
-    def __init__(self, driver):
+    def __init__(self, driver: object) -> None:
         self.base_url = 'https://demoqa.com/'
         self.footer_text = "© 2013-2026 TOOLSQA.COM | ALL RIGHTS RESERVED."
         super().__init__(driver,self.base_url)
         # данные прокидываются в верхний класс
 
         self.icon = WebElement(driver,locator='header > a')
-        self.btn = WebElement(driver,locator=".category-cards > a")
+        self.btn_elements = WebElement(driver, locator=".category-cards > a")
         self.footer = WebElement(driver,locator='footer > span')
 
     def exist_icon(self):

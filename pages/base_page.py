@@ -31,7 +31,7 @@ class BasePage:
         self.driver.back()
 
     def forward(self):
-        self.driver.foward()
+        self.driver.forward()
 
     def refresh(self):
         self.driver.refresh()

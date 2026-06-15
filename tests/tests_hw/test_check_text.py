@@ -11,7 +11,7 @@ def test_check_text_centre(browser):
     demo_qa_page = DemoQa(browser)
     elements_page = ElementsPage(browser)
     demo_qa_page.visit()
-    demo_qa_page.btn.click()
+    demo_qa_page.btn_elements.click()
     time.sleep(3)
     assert elements_page.centre.get_text() == elements_page.centre_text
 
