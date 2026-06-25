@@ -20,3 +20,8 @@ class FormPage(BasePage):
         self.state_drop_down = WebElement(driver, "#react-select-3-option-2")
         self.city = WebElement(driver, "#city")
         self.city_drop_down = WebElement(driver, "#react-select-4-option-1")
+
+        self.btn_state = WebElement(driver, "#state")
+        self.inp_state = WebElement(driver, "#react-select-3-input")
+
+        self.btn_NCR = WebElement(driver, '//*[contains(text(), "NCR")]', "xpath")
