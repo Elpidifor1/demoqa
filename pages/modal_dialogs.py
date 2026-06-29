@@ -1,9 +1,16 @@
 from pages.base_page import BasePage
 from components.components import WebElement
 
-class ModalDialogs(BasePage):
+class ModalDialogsPage(BasePage):
     def __init__(self, driver):
         self.base_url = "https://demoqa.com/modal-dialogs"
         super().__init__(driver, self.base_url)
-        self.btns_third_menu = WebElement(driver, ".element-group:nth-child(3) .btn.btn-light")
-        self.main_icon = WebElement(driver, "#root > header > a")
+
+        self.small_modal_btn = WebElement(driver, '#showSmallModal')
+        self.small_modal = WebElement(driver, '#example-modal-sizes-title-sm')
+        self.close_small_btn = WebElement(driver, '#closeSmallModal')
+        self.large_modal_btn = WebElement(driver, '#showLargeModal')
+        self.large_modal = WebElement(driver,'#example-modal-sizes-title-lg')
+        self.close_large_btn = WebElement(driver, '#closeLargeModal')
+
+
