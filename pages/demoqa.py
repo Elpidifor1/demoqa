@@ -16,6 +16,8 @@ class DemoQa(BasePage):
         self.icon = WebElement(driver,locator='header > a')
         self.btn_elements = WebElement(driver, locator=".category-cards > a")
         self.footer = WebElement(driver,locator='footer > span')
+        #заголовки 5 уровня c неуникальным локатором h5
+        self.h5_headers = WebElement(driver,'h5')
 
     def exist_icon(self):
         try:
